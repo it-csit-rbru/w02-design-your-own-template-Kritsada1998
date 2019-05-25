@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--หัวหลัก-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>6014421001 | Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <!--เชื่อมไป .CSS-->
+    <link href = "css/style.css" rel = "stylesheet" content = "ie=edge">
+    <!--เนวิเกชั่น-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--สไลด์ภาพ-->
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
+<body style="background-image: url(IMG/BG3.jpg) ;  background-repeat: no-repeat ; background-size: 100% ">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Kritsada Kh.</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="homework.html">Homework</a></li>
+                <li><a href="project.html">Project</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        <div id = "slide1">
+          <div class="w3-content w3-section" style="max-width:400px">
+            <img class="mySlides" src="IMG/G1.jpg" style="width:100%">
+            <img class="mySlides" src="IMG/G2.jpg" style="width:100%">
+            <img class="mySlides" src="IMG/G3.jpg" style="width:100%">
+            <img class="mySlides" src="IMG/G4.jpg" style="width:100%">
+            <img class="mySlides" src="IMG/G5.jpg" style="width:100%">
+            <img class="mySlides" src="IMG/G6.jpg" style="width:100%">
+            <img class="mySlides" src="IMG/G7.jpg" style="width:100%">
+          </div>
+        </div>
+
+        
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+          </script>
+
+      <marquee scrolldelay="50" direction="left">JB, Markeu, Jackson, Park Jinyoung, Choi Youngjae, Bambam, Kim Yugyeom, Got7!</marquee>
+
+      <div style="color: whitesmoke ; background: sandybrown ;width: 30% ;">
+        <h2>Kritsada Khunnachart (Man)</h2>
+        <p>6014421001 6014421001@rbru.ac.th</p>
+        <p>Computer Scient and Technology RBRU</p>
+    </div>
+
+        <div id = "Music">
+        <audio hidden controls autoplay loop >
+            <source src = "Music/1GOT7Lullaby.mp3" type = "audio/mp3"  >
+        </audio>
+       </div>
+    </body>
+</html>
